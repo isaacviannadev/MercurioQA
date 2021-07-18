@@ -1,4 +1,4 @@
-import { FormEvent, useState } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
 import illustrationImg from '../assets/images/illustration.svg';
@@ -7,16 +7,44 @@ import { Button } from '../components/Button';
 import { database } from '../services/firebase';
 import '../styles/auth.scss';
 import { useAuth } from '../hooks/useAuth';
+import toast from 'react-hot-toast';
 
 export function NewRoom() {
   const { user } = useAuth();
   const history = useHistory();
   const [newRoom, setNewRoom] = useState('');
 
+  useEffect(() => {
+    toast(
+      (t) => (
+        <span>
+          Olá,
+          <b> {user?.name}</b>
+        </span>
+      ),
+      {
+        icon: '👏',
+        style: {
+          borderRadius: '999px',
+          background: '#e559f9',
+          color: '#fff',
+        },
+      }
+    );
+  }, []);
+
   async function handleCreateRoom(e: FormEvent) {
     e.preventDefault();
 
     if (newRoom.trim() === '') {
+      toast((t) => <span> Sua sala precisa de um nome.</span>, {
+        icon: '🤷‍♂️',
+        style: {
+          borderRadius: '999px',
+          background: '#e559f9',
+          color: '#fff',
+        },
+      });
       return;
     }
 
