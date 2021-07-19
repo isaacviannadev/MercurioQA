@@ -28,6 +28,13 @@ export function Home() {
     event.preventDefault();
 
     if (roomCode.trim() === '') {
+      toast.error('Preencha com o códgo da sala', {
+        style: {
+          borderRadius: '999px',
+          background: '#7bd134',
+          color: '#fff',
+        },
+      });
       return;
     }
 
