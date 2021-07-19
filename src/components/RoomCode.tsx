@@ -14,7 +14,7 @@ export function RoomCode(props: RoomCodeProps) {
     toast.success('Código Copiado', {
       style: {
         borderRadius: '999px',
-        background: '#e559f9',
+        background: '#7bd134',
         color: '#fff',
       },
     });

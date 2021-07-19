@@ -9,6 +9,7 @@ import { Button } from '../components/Button';
 import { useAuth } from '../hooks/useAuth';
 import { FormEvent, useState } from 'react';
 import { database } from '../services/firebase';
+import toast from 'react-hot-toast';
 
 export function Home() {
   const history = useHistory();
@@ -37,6 +38,22 @@ export function Home() {
       return;
     }
 
+    if (roomRef.val().endedAt) {
+      toast.error('Esta sala foi encerrada pelo dono', {
+        style: {
+          borderRadius: '999px',
+          background: '#7bd134',
+          color: '#fff',
+        },
+      });
+      return;
+    }
+
+    // if (roomRef.val().authorId === user?.id) {
+    //   history.push(`admin/rooms/${roomCode}`);
+    // } else {
+    //   history.push(`/rooms/${roomCode}`);
+    // }
     history.push(`/rooms/${roomCode}`);
   }
 

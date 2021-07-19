@@ -8,8 +8,26 @@
     margin-top: 8px;
   }
 
+  &.highlighted {
+    // border: 10px solid;
+    // border-image-slice: 1;
+    // border-width: 2px;
+    // border-image-source: linear-gradient(to left, #2192d1, #7bd134);
+    background: #d9eef9;
+    border: 2px solid #2192d1;
+
+    footer .userInfo span {
+      color: #1c1d20;
+    }
+  }
+
+  &.answered {
+    background: #dbe4e6;
+  }
+
   p {
-    color: #29292e;
+    color: #2d2e33;
+    font-weight: 500;
   }
 
   footer {
@@ -17,6 +35,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 24px;
+    transition: filter 0.2s;
 
     .userInfo {
       display: flex;
@@ -32,6 +51,36 @@
         margin-left: 8px;
         color: #737380;
         font-size: 14px;
+      }
+    }
+
+    > div {
+      display: flex;
+      gap: 16px;
+    }
+
+    button {
+      border: 0;
+      cursor: pointer;
+      background: transparent;
+      gap: 8px;
+
+      &.likeBtn {
+        display: flex;
+        align-items: flex-end;
+        color: #737380;
+
+        &.liked {
+          color: #2192d1;
+
+          svg path {
+            stroke: #2192d1;
+          }
+        }
+      }
+
+      &:hover {
+        filter: brightness(0.7);
       }
     }
   }

@@ -26,7 +26,7 @@ export function NewRoom() {
         icon: '👏',
         style: {
           borderRadius: '999px',
-          background: '#e559f9',
+          background: '#A0EF3C',
           color: '#fff',
         },
       }
@@ -41,7 +41,7 @@ export function NewRoom() {
         icon: '🤷‍♂️',
         style: {
           borderRadius: '999px',
-          background: '#e559f9',
+          background: '#A0EF3C',
           color: '#fff',
         },
       });
@@ -55,7 +55,7 @@ export function NewRoom() {
       authorId: user?.id,
     });
 
-    history.push(`/rooms/${firebaseRoom.key}`);
+    history.push(`/admin/rooms/${firebaseRoom.key}`);
   }
 
   return (
