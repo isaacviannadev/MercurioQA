@@ -1,4 +1,5 @@
 import { FormEvent, useState } from 'react';
+import toast from 'react-hot-toast';
 import { useHistory, useParams } from 'react-router-dom';
 import logoImg from '../assets/images/logo.svg';
 import { Button } from '../components/Button';
@@ -27,6 +28,13 @@ export function Room() {
     e.preventDefault();
 
     if (newQuestion.trim() === '') {
+      toast.error('Precisa perguntar para ser respondido', {
+        style: {
+          borderRadius: '999px',
+          background: '#7bd134',
+          color: '#fff',
+        },
+      });
       return;
     }
     if (!user) {

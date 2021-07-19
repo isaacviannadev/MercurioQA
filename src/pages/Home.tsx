@@ -41,7 +41,13 @@ export function Home() {
     const roomRef = await database.ref(`/rooms/${roomCode}`).get();
 
     if (!roomRef.exists()) {
-      alert('Room does not exist');
+      toast.error('Esta sala nao existe', {
+        style: {
+          borderRadius: '999px',
+          background: '#7bd134',
+          color: '#fff',
+        },
+      });
       return;
     }
 
