@@ -31,7 +31,7 @@ export function NewRoom() {
         },
       }
     );
-  }, []);
+  }, [user?.name]);
 
   async function handleCreateRoom(e: FormEvent) {
     e.preventDefault();
