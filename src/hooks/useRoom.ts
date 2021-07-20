@@ -63,7 +63,16 @@ export function useRoom(roomId: string) {
       );
 
       const ordenedByLikes = parsedQuestions.sort(function (a, b) {
-        return b.likeCount - a.likeCount;
+        if (a.isHighlighted) {
+          return 1;
+        }
+        if (a.likeCount > b.likeCount) {
+          return 1;
+        }
+        if (a.isAnswered || b.isAnswered) {
+          return -1;
+        }
+        return 0;
       });
       setTitle(databaseRoom.title);
       setQuestions(ordenedByLikes);

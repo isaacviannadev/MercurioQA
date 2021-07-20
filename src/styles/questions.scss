@@ -60,6 +60,8 @@
     }
 
     button {
+      display: flex;
+
       border: 0;
       cursor: pointer;
       background: transparent;
@@ -68,7 +70,12 @@
       &.likeBtn {
         display: flex;
         align-items: flex-end;
+
         color: #737380;
+
+        .likeBtn2 {
+          justify-content: center;
+        }
 
         &.liked {
           color: #2192d1;

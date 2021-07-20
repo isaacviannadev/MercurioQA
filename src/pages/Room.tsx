@@ -91,9 +91,12 @@ export function Room() {
 
       <main className='content'>
         <div className='roomTitle'>
-          <h1>{title}</h1>
-
-          {questions.length > 0 && <span>{questions.length} pergunta(s)</span>}
+          <div className='details'>
+            <h1>{title}</h1>
+            {questions.length > 0 && (
+              <span>{questions.length} pergunta(s)</span>
+            )}
+          </div>
         </div>
 
         <form onSubmit={handleSendQuestion}>
