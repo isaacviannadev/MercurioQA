@@ -109,11 +109,12 @@ export function AdminRoom() {
 
           <div className='cardRoomInfo'>
             <div className='infoRoom'>
-              <span>
+              {/* <span>
                 Pessoas na sala: <strong>{'87'}</strong>
-              </span>
+              </span> */}
               <span>
-                Perguntas: <strong>{'267'}</strong>
+                Perguntas:{' '}
+                <strong>{questions.length > 0 ? questions.length : '0'}</strong>
               </span>
             </div>
             <div className='codeCard'>
