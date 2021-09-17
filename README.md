@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=Mercurio&message=06&color=2192D1&labelColor=000000" alt="Mercurio Q&A" />
+  <img src="https://img.shields.io/static/v1?label=Mercurio&message=Q&A&color=2192D1&labelColor=000000" alt="Mercurio Q&A" />
   
   <img src="https://img.shields.io/github/stars/isaacviannadev/MercurioQA?label=stars&message=MIT&color=2192D1&labelColor=000000" alt="Stars">
 
@@ -11,7 +11,7 @@
 </p>
 
 <h1 align="center">
-    <img alt="MercurioQ&A" src="/imgreadme.png" />
+    <img alt="MercurioQ&A" src="imgreadme.png" />
 </h1>
 
 # Getting Started with Create React App
