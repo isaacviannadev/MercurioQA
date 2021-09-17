@@ -11,7 +11,7 @@
 </p>
 
 <h1 align="center">
-    <img alt="MercurioQ&A" src="/mercurio.png" />
+    <img alt="MercurioQ&A" src="/emgreadme.png" />
 </h1>
 
 # Getting Started with Create React App
