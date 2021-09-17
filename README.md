@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=Mercurio&message=Q&A&color=2192D1&labelColor=000000" alt="Mercurio Q&A" />
+  <img src="https://img.shields.io/static/v1?label=Mercurio&message=v1.1&color=2192D1&labelColor=000000" alt="Mercurio Q&A" />
   
   <img src="https://img.shields.io/github/stars/isaacviannadev/MercurioQA?label=stars&message=MIT&color=2192D1&labelColor=000000" alt="Stars">
 
