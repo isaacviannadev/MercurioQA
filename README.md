@@ -1,3 +1,19 @@
+<p align="center">
+  <img alt="MercurioQ&A" src="src/assets/images/logo.svg" width="160px">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=Mercurio&message=06&color=2192D1&labelColor=000000" alt="Mercurio Q&A" />
+  
+  <img src="https://img.shields.io/github/stars/isaacviannadev/MercurioQA?label=stars&message=MIT&color=2192D1&labelColor=000000" alt="Stars">
+
+  <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=2192D1&labelColor=000000" alt="License">   
+</p>
+
+<h1 align="center">
+    <img alt="MercurioQ&A" src="/mercurio.png" />
+</h1>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -44,4 +60,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
 # LetmeAsk
